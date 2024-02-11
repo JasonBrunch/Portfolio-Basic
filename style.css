@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.homepage {
+    display: flex; /* Make it a flex container */
+    justify-content: center; /* Center horizontally */
+
+
+
+    background-image: url('images/forest.jpg');
+    height: 100vh; 
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000; /* In case the image doesn't load */
+
+
+}
+
+.centered-hero{
+
+    padding-top: 13%;
+    text-align: center;
+    font-family: adobe-garamond-pro, serif;
+
+
+}
+.centered-hero h1 {
+    font-size: 3.75rem; /* Larger size for h1 */
+    color: #14342c;
+    font-weight: 300;
+}
+
+.centered-hero h2 {
+    font-size: 2.8rem; /* Slightly smaller size for h2 */
+    color: #2d2d2d;
+    font-weight: 500;
+    
+}
+.about-page {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+  }
+.horizontal-border{
+    width: 100%;
+    height: 25rem;
+    background-color: #000;
+}
+.about-page h1{
+    padding-top: 3.5rem;
+    font-size: 3.25rem;
+}
