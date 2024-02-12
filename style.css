@@ -55,6 +55,9 @@ h1, h2 {
     height: 25rem;
     background-color: #000;
 }
+.comic-me{
+    margin-top: -10rem;
+}
 .about-page h1{
     padding-top: 3.5rem;
     font-size: 3.25rem;
