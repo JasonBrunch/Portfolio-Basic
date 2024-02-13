@@ -70,6 +70,8 @@ h1, h2 {
     padding-right: 30rem;
     padding-bottom: 18rem;
 
+    text-align: center;
+
     font-family: "peridot-pe-variable", sans-serif;
     color: #2d2d2d;
 }
@@ -103,3 +105,17 @@ h1, h2 {
     font-style: normal;
     font-size: 2.75rem;
   }
+  .project-cards-container {
+    display: flex;
+}
+
+.project-card {
+    width: 400px; /* Fixed width */
+    height: 425px; /* Fixed height */
+    overflow: hidden; /* Ensures nothing spills out of the card */
+    background-color: lightskyblue; /* Fallback color */
+    border-radius: 15px;
+    background-image: url('images/westcoastees.png'); /* Your image path */
+    background-position: center; /* Centers the image in the card */
+    background-size: cover; /* Scales the image to cover the card */
+}
