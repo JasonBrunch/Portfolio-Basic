@@ -86,6 +86,21 @@ h1, h2 {
     line-height: 1.25;
 
 }
+.techicon-container{
+    display: flex;
+    width: 100%;
+    padding-top: 3rem;
+    justify-content: center;
+    gap: 2.8rem;
+}
+.tech-icon{
+
+}
+.tech-icon h2{
+    font-size: 1.2rem;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
 .projects-page {
     position: relative; 
     text-align: center;
@@ -118,4 +133,38 @@ h1, h2 {
     background-image: url('images/westcoastees.png'); /* Your image path */
     background-position: center; /* Centers the image in the card */
     background-size: cover; /* Scales the image to cover the card */
+
+    position: relative;
+}
+.project-card .label {
+    position: absolute; /* Absolute positioning within the project-card */
+    top: 68%; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    padding-left: 8%;
+    width: 270px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.95); /* Just for visibility */
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 12.5px 12.5px 0; /* top-left, top-right, bottom-right, bottom-left */
+    
+    justify-content: center; /* Center content horizontally */
+
+    font-family: "peridot-pe-variable", sans-serif;
+
+}
+.project-card .label h2{
+    color: #f33f24;
+    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+
+}
+.project-card .label h3{
+    margin: 0;
+    font-weight: 100;
+    font-size: 1rem;
+   
 }
