@@ -53,6 +53,7 @@ h1, h2 {
     display: flex;
     flex-direction: column; /* Arrange items in a column */
     align-items: center; /* Center items horizontally */
+
   }
 .horizontal-border{
     width: 100%;
@@ -70,9 +71,10 @@ h1, h2 {
     align-items: center; 
     justify-content: center;
     padding-top: 3.5rem;
-    padding-left: 30rem;
-    padding-right: 30rem;
-    padding-bottom: 18rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 5rem;
+
 
     text-align: center;
 
@@ -80,12 +82,12 @@ h1, h2 {
     color: #2d2d2d;
 }
 .about-page h1{
-    font-size: 3.25rem;
-    font-family: "peridot-pe-variable", sans-serif;
+    font-size: 4rem;
+    font-family: "marker-aid", sans-serif;
 
 }
 .about-page h2{
-    margin-top: 2.75rem;
+    margin-top: 2rem;
     font-size: 1.75rem;
     line-height: 1.25;
 
@@ -96,6 +98,7 @@ h1, h2 {
     padding-top: 3rem;
     justify-content: center;
     gap: 2.8rem;
+
 }
 .tech-icon{
 
@@ -105,34 +108,28 @@ h1, h2 {
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
 }
-.projects-page {
-    position: relative; 
-    text-align: center;
-}
-  .projects-image {
-    width: auto; 
-    height: auto;
-  }
+
   .projects-header {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
+
+    text-align: left; 
     color: rgb(0, 0, 0); 
     font-family: "marker-aid", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.75rem;
+    font-size: 4.75rem;
+
+    padding-left: 20rem;
   }
   .project-cards-container {
     display: flex;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .project-card {
     width: 400px; /* Fixed width */
     height: 425px; /* Fixed height */
     overflow: hidden; /* Ensures nothing spills out of the card */
-    background-color: lightskyblue; /* Fallback color */
     border-radius: 15px;
     background-image: url('images/westcoastees.png'); /* Your image path */
     background-position: center; /* Centers the image in the card */
@@ -171,4 +168,23 @@ h1, h2 {
     font-weight: 100;
     font-size: 1rem;
    
+}
+.contact-page h1{
+    color: rgb(0, 0, 0); 
+    font-family: "marker-aid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+.footer{
+    width: 100%;
+    min-height: 5rem;
+    background-color: #5d5bf0;
+  
+    color: rgb(0, 0, 0);
+    font-family: "peridot-pe-variable", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
