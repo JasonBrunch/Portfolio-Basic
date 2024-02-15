@@ -544,6 +544,30 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -557,12 +581,32 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-\[-13rem\] {
+  margin-top: -13rem;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-full {
@@ -577,6 +621,14 @@ video {
   resize: none;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -585,8 +637,20 @@ video {
   justify-content: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-tr-xl {
+  border-top-right-radius: 0.75rem;
 }
 
 .border {
@@ -603,13 +667,48 @@ video {
   background-color: rgb(106 100 241 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-95 {
+  --tw-bg-opacity: 0.95;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-12 {
   padding: 3rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -627,9 +726,44 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -640,6 +774,10 @@ video {
   font-weight: 600;
 }
 
+.leading-snug {
+  line-height: 1.375;
+}
+
 .text-\[\#07074D\] {
   --tw-text-opacity: 1;
   color: rgb(7 7 77 / var(--tw-text-opacity));
@@ -648,6 +786,21 @@ video {
 .text-\[\#6B7280\] {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-green-900 {
+  --tw-text-opacity: 1;
+  color: rgb(20 83 45 / var(--tw-text-opacity));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -671,181 +824,7 @@ h1, h2 {
 }
 
 .homepage {
-  display: flex;
-  /* Make it a flex container */
-  justify-content: center;
-  /* Center horizontally */
   background-image: url('images/forest.jpg');
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000;
-  /* In case the image doesn't load */
-}
-
-.centered-hero{
-  padding-top: 13%;
-  text-align: center;
-  font-family: adobe-garamond-pro, serif;
-}
-
-.centered-hero h1 {
-  font-size: 3.75rem;
-  /* Larger size for h1 */
-  color: #14342c;
-  font-weight: 300;
-}
-
-.centered-hero h2 {
-  font-size: 2.8rem;
-  /* Slightly smaller size for h2 */
-  color: #2d2d2d;
-  font-weight: 500;
-}
-
-.about-page {
-  display: flex;
-  flex-direction: column;
-  /* Arrange items in a column */
-  align-items: center;
-  /* Center items horizontally */
-}
-
-.horizontal-border{
-  width: 100%;
-  height: 18rem;
-  background-image: url('images/leafpattern.jpg');
-  background-repeat: repeat;
-  background-size: 300px 300px;
-}
-
-.comic-me{
-  margin-top: -13rem;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3.5rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  padding-bottom: 5rem;
-  text-align: center;
-  font-family: "peridot-pe-variable", sans-serif;
-  color: #2d2d2d;
-}
-
-.about-page h1{
-  font-size: 4rem;
-  font-family: "marker-aid", sans-serif;
-}
-
-.about-page h2{
-  margin-top: 2rem;
-  font-size: 1.75rem;
-  line-height: 1.25;
-}
-
-.techicon-container{
-  display: flex;
-  width: 100%;
-  padding-top: 3rem;
-  justify-content: center;
-  gap: 2.8rem;
-}
-
-.tech-icon{
-}
-
-.tech-icon h2{
-  font-size: 1.2rem;
-  margin: 0;
-  /* Removes default margin */
-  padding: 0;
-  /* Removes default padding */
-}
-
-.projects-header {
-  text-align: left;
-  color: rgb(0, 0, 0);
-  font-family: "marker-aid", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 4.75rem;
-  padding-left: 20rem;
-}
-
-.project-cards-container {
-  display: flex;
-  padding-left: 20rem;
-  padding-right: 20rem;
-}
-
-.project-card {
-  width: 400px;
-  /* Fixed width */
-  height: 425px;
-  /* Fixed height */
-  overflow: hidden;
-  /* Ensures nothing spills out of the card */
-  border-radius: 15px;
-  background-image: url('images/westcoastees.png');
-  /* Your image path */
-  background-position: center;
-  /* Centers the image in the card */
-  background-size: cover;
-  /* Scales the image to cover the card */
-  position: relative;
-}
-
-.project-card .label {
-  position: absolute;
-  /* Absolute positioning within the project-card */
-  top: 68%;
-  /* Adjust as needed */
-  left: 0;
-  /* Adjust as needed */
-  padding-left: 8%;
-  width: 270px;
-  /* Adjust as needed */
-  height: 100px;
-  /* Adjust as needed */
-  background-color: rgba(255, 255, 255, 0.95);
-  /* Just for visibility */
-  display: flex;
-  flex-direction: column;
-  border-radius: 0 12.5px 12.5px 0;
-  /* top-left, top-right, bottom-right, bottom-left */
-  justify-content: center;
-  /* Center content horizontally */
-  font-family: "peridot-pe-variable", sans-serif;
-}
-
-.project-card .label h2{
-  color: #f33f24;
-  margin: 0;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0.5rem;
-}
-
-.project-card .label h3{
-  margin: 0;
-  font-weight: 100;
-  font-size: 1rem;
-}
-
-.contact-page h1{
-  color: rgb(0, 0, 0);
-  font-family: "marker-aid", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 4rem;
 }
 
 .footer{
@@ -859,6 +838,22 @@ h1, h2 {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .horizontal-border {
+    background-size: 150px 150px;
+    height: 12rem;
+    /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal-border {
+    background-size: 100px 100px;
+    height: 8rem;
+    /* Adjust height for very small screens */
+  }
+}
+
 .focus\:border-\[\#6A64F1\]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(106 100 241 / var(--tw-border-opacity));
@@ -868,4 +863,49 @@ h1, h2 {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
+  .sm\:w-1\/3 {
+    width: 33.333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
 }
