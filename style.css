@@ -12,9 +12,7 @@ h1, h2 {
     margin: 0;
 }
 
-.homepage {
-    background-image: url('images/forest.jpg');
-}
+
 .footer{
     width: 100%;
     min-height: 5rem;
@@ -26,17 +24,4 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-@media (max-width: 768px) {
-    .horizontal-border {
-        background-size: 150px 150px;
-        height: 12rem; /* Adjust height for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .horizontal-border {
-        background-size: 100px 100px;
-        height: 8rem; /* Adjust height for very small screens */
-    }
 }
